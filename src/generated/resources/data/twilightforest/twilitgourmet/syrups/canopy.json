@@ -1,0 +1,9 @@
+{
+  "color": -11455714,
+  "effect": {
+    "duration": 900,
+    "id": "minecraft:slow_falling",
+    "show_icon": true
+  },
+  "fill_chance_on_random_tick": 0.125
+}

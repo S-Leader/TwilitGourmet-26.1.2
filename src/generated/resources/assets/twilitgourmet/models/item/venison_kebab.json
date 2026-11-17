@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "twilitgourmet:item/venison_kebab"
+  }
+}

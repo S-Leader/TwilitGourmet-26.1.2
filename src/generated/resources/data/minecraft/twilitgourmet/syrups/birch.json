@@ -1,0 +1,9 @@
+{
+  "color": -2898809,
+  "effect": {
+    "duration": 900,
+    "id": "minecraft:jump_boost",
+    "show_icon": true
+  },
+  "fill_chance_on_random_tick": 0.125
+}

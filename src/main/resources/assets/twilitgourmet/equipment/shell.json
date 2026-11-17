@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "twilitgourmet:shell"
+      }
+    ],
+    "humanoid_baby": [
+      {
+        "texture": "twilitgourmet:shell"
+      }
+    ]
+  }
+}

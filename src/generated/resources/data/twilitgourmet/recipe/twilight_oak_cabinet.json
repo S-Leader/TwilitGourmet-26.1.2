@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "fd_cabinet",
+  "key": {
+    "D": "twilightforest:twilight_oak_trapdoor",
+    "_": "twilightforest:twilight_oak_slab"
+  },
+  "pattern": [
+    "___",
+    "D D",
+    "___"
+  ],
+  "result": {
+    "id": "twilitgourmet:twilight_oak_cabinet"
+  }
+}

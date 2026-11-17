@@ -1,0 +1,9 @@
+{
+  "color": -11912668,
+  "effect": {
+    "duration": 900,
+    "id": "minecraft:resistance",
+    "show_icon": true
+  },
+  "fill_chance_on_random_tick": 0.125
+}

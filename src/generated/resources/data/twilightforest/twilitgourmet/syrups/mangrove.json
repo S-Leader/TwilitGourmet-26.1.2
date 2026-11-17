@@ -1,0 +1,9 @@
+{
+  "color": -4287639,
+  "effect": {
+    "duration": 900,
+    "id": "minecraft:water_breathing",
+    "show_icon": true
+  },
+  "fill_chance_on_random_tick": 0.125
+}

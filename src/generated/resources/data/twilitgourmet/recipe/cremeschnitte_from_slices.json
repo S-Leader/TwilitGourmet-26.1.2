@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "tg_cremeschnitte",
+  "key": {
+    "S": "twilitgourmet:cremeschnitte_slice"
+  },
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "result": {
+    "id": "twilitgourmet:cremeschnitte"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": "#c:ingots/steeleaf",
+    "S": "#c:rods/wooden"
+  },
+  "pattern": [
+    "I",
+    "S"
+  ],
+  "result": {
+    "components": {
+      "minecraft:enchantments": {
+        "minecraft:sharpness": 2
+      }
+    },
+    "id": "twilitgourmet:steeleaf_knife"
+  }
+}

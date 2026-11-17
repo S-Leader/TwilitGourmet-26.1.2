@@ -1,0 +1,35 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    [
+      "twilightforest:time_door",
+      "twilightforest:time_trapdoor",
+      "twilightforest:time_sign",
+      "twilightforest:time_hanging_sign",
+      "twilightforest:time_fence",
+      "twilightforest:time_fence_gate",
+      "twilightforest:time_pressure_plate",
+      "twilightforest:time_button",
+      "twilightforest:time_boat",
+      "twilitgourmet:time_cabinet"
+    ]
+  ],
+  "result": [
+    {
+      "chance": 0.75,
+      "item": {
+        "id": "twilightforest:time_planks"
+      }
+    }
+  ],
+  "tool": {
+    "neoforge:ingredient_type": "neoforge:compound",
+    "children": [
+      {
+        "neoforge:ingredient_type": "farmersdelight:item_ability",
+        "action": "axe_dig"
+      },
+      "#minecraft:axes"
+    ]
+  }
+}

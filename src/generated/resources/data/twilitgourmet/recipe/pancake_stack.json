@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "twilitgourmet:pancake",
+    "twilitgourmet:pancake",
+    "twilitgourmet:pancake"
+  ],
+  "result": {
+    "id": "twilitgourmet:pancake_stack"
+  }
+}

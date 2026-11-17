@@ -1,0 +1,16 @@
+{
+  "type": "twilightforest:cheese_aging",
+  "aging_time": 12000,
+  "input": "twilitgourmet:young_cheese",
+  "result": {
+    "id": "twilitgourmet:aged_cheese"
+  },
+  "rot_handler": {
+    "check_radius": 1,
+    "check_skylight": true,
+    "rot_causers": "#twilitgourmet:dirty_blocks",
+    "rots_into": {
+      "id": "twilitgourmet:rotten_cheese"
+    }
+  }
+}

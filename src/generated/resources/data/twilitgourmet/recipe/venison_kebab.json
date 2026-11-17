@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:stick",
+    "minecraft:stick",
+    "twilightforest:cooked_venison",
+    "#c:crops/onion",
+    "#c:mushrooms",
+    "#c:crops/potato"
+  ],
+  "result": {
+    "count": 2,
+    "id": "twilitgourmet:venison_kebab"
+  }
+}

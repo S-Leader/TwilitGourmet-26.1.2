@@ -1,0 +1,35 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    [
+      "twilightforest:canopy_door",
+      "twilightforest:canopy_trapdoor",
+      "twilightforest:canopy_sign",
+      "twilightforest:canopy_hanging_sign",
+      "twilightforest:canopy_fence",
+      "twilightforest:canopy_fence_gate",
+      "twilightforest:canopy_pressure_plate",
+      "twilightforest:canopy_button",
+      "twilightforest:canopy_boat",
+      "twilitgourmet:canopy_cabinet"
+    ]
+  ],
+  "result": [
+    {
+      "chance": 0.75,
+      "item": {
+        "id": "twilightforest:canopy_planks"
+      }
+    }
+  ],
+  "tool": {
+    "neoforge:ingredient_type": "neoforge:compound",
+    "children": [
+      {
+        "neoforge:ingredient_type": "farmersdelight:item_ability",
+        "action": "axe_dig"
+      },
+      "#minecraft:axes"
+    ]
+  }
+}

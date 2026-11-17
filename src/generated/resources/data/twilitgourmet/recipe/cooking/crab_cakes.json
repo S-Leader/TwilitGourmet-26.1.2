@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "id": "minecraft:bowl"
+  },
+  "experience": 1.0,
+  "ingredients": [
+    "twilitgourmet:crab_meat",
+    "twilitgourmet:crab_meat",
+    "twilitgourmet:breadcrumbs",
+    "twilitgourmet:breadcrumbs",
+    "#c:crops/onion",
+    "#c:eggs"
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "twilitgourmet:crab_cakes"
+  }
+}

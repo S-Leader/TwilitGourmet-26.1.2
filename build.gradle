@@ -1,0 +1,96 @@
+import net.neoforged.nfrtgradle.NeoFormRuntimeTask
+
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+
+group = 'com.gizmo.twilitgourmet'
+version = "${minecraft_version}-${mod_version}"
+base { archivesName = 'twilitgourmet' }
+java { toolchain.languageVersion = JavaLanguageVersion.of(25); withSourcesJar() }
+
+sourceSets {
+    data {
+        compileClasspath += sourceSets.main.output
+        runtimeClasspath += sourceSets.main.output
+    }
+}
+
+configurations {
+    dataImplementation.extendsFrom implementation
+    dataCompileOnly.extendsFrom compileOnly
+    dataRuntimeOnly.extendsFrom runtimeOnly
+}
+
+neoForge {
+    version = project.neo_version
+    mods { twilitgourmet { sourceSet sourceSets.main } }
+    addModdingDependenciesTo sourceSets.data
+    def dataMod = mods.create('twilitgourmetData') {
+        sourceSet sourceSets.main
+        sourceSet sourceSets.data
+    }
+    runs {
+        client { client(); loadedMods = [mods.twilitgourmet]; gameDirectory = file('run/client') }
+        server { server(); loadedMods = [mods.twilitgourmet]; programArgument '--nogui'; gameDirectory = file('run/server') }
+        data {
+            clientData()
+            sourceSet = sourceSets.data
+            loadedMods = [dataMod]
+            gameDirectory = file('run/data')
+            programArguments.addAll '--mod', 'twilitgourmet', '--all', '--output', file('src/generated/resources').absolutePath, '--existing', file('src/main/resources').absolutePath
+        }
+        serverData {
+            serverData()
+            sourceSet = sourceSets.data
+            loadedMods = [dataMod]
+            gameDirectory = file('run/server-data')
+            programArguments.addAll '--mod', 'twilitgourmet', '--all', '--output', file('src/generated/resources').absolutePath, '--existing', file('src/main/resources').absolutePath
+            programArgument '--uncached'
+        }
+    }
+}
+
+dependencies {
+    implementation files('libs/FarmersDelight-26.1.2-1.3.3-fix8.jar')
+    implementation files('libs/twilightforest-26.1.2-4.9.3912-universal.jar')
+    compileOnly files('libs/jei-26.1.2-neoforge-29.53.0.115.jar')
+    runtimeOnly files('libs/jei-26.1.2-neoforge-29.53.0.115.jar')
+}
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.compilerArgs += ['-proc:none']
+}
+
+tasks.named('processResources') {
+    inputs.property 'mod_version', project.version
+    filesMatching('META-INF/neoforge.mods.toml') { expand(mod_version: project.version) }
+    exclude '.cache/**'
+}
+
+tasks.named('check') { dependsOn tasks.named('compileDataJava') }
+
+tasks.named('jar') {
+    from('LICENSE')
+    manifest { attributes 'Implementation-Version': project.version, 'MixinConfigs': 'twilitgourmet.mixins.json' }
+}
+
+tasks.named('sourcesJar') {
+    from('LICENSE', 'README.md')
+    from(sourceSets.data.allSource)
+    exclude '.cache/**'
+}
+
+tasks.register('runClientData') {
+    group = 'mod development'
+    description = 'Generates client assets and server data using the client data generator.'
+    dependsOn tasks.named('runData')
+}
+
+tasks.withType(NeoFormRuntimeTask).configureEach {
+    javaExecutable = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(25) }.map { it.executablePath.asFile.absolutePath }
+}

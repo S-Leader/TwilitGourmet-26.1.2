@@ -1,0 +1,35 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    [
+      "twilightforest:mining_door",
+      "twilightforest:mining_trapdoor",
+      "twilightforest:mining_sign",
+      "twilightforest:mining_hanging_sign",
+      "twilightforest:mining_fence",
+      "twilightforest:mining_fence_gate",
+      "twilightforest:mining_pressure_plate",
+      "twilightforest:mining_button",
+      "twilightforest:mining_boat",
+      "twilitgourmet:mining_cabinet"
+    ]
+  ],
+  "result": [
+    {
+      "chance": 0.75,
+      "item": {
+        "id": "twilightforest:mining_planks"
+      }
+    }
+  ],
+  "tool": {
+    "neoforge:ingredient_type": "neoforge:compound",
+    "children": [
+      {
+        "neoforge:ingredient_type": "farmersdelight:item_ability",
+        "action": "axe_dig"
+      },
+      "#minecraft:axes"
+    ]
+  }
+}

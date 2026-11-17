@@ -1,0 +1,35 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    [
+      "twilightforest:twilight_oak_door",
+      "twilightforest:twilight_oak_trapdoor",
+      "twilightforest:twilight_oak_sign",
+      "twilightforest:twilight_oak_hanging_sign",
+      "twilightforest:twilight_oak_fence",
+      "twilightforest:twilight_oak_fence_gate",
+      "twilightforest:twilight_oak_pressure_plate",
+      "twilightforest:twilight_oak_button",
+      "twilightforest:twilight_oak_boat",
+      "twilitgourmet:twilight_oak_cabinet"
+    ]
+  ],
+  "result": [
+    {
+      "chance": 0.75,
+      "item": {
+        "id": "twilightforest:twilight_oak_planks"
+      }
+    }
+  ],
+  "tool": {
+    "neoforge:ingredient_type": "neoforge:compound",
+    "children": [
+      {
+        "neoforge:ingredient_type": "farmersdelight:item_ability",
+        "action": "axe_dig"
+      },
+      "#minecraft:axes"
+    ]
+  }
+}

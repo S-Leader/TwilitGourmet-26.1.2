@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": {
+      "force_translucent": true,
+      "neoforge_data": {
+        "light_emission": 15
+      },
+      "sprite": "twilitgourmet:item/fiery_knife"
+    }
+  }
+}

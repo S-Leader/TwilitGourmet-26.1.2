@@ -1,0 +1,18 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    [
+      "farmersdelight:pie_crust",
+      "twilitgourmet:maze_wafer_crust"
+    ],
+    "#c:eggs",
+    "#c:eggs",
+    "twilitgourmet:crab_meat",
+    "twilitgourmet:crab_meat"
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "twilitgourmet:crab_quiche"
+  }
+}

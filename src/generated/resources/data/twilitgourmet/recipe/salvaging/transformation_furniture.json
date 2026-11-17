@@ -1,0 +1,35 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    [
+      "twilightforest:transformation_door",
+      "twilightforest:transformation_trapdoor",
+      "twilightforest:transformation_sign",
+      "twilightforest:transformation_hanging_sign",
+      "twilightforest:transformation_fence",
+      "twilightforest:transformation_fence_gate",
+      "twilightforest:transformation_pressure_plate",
+      "twilightforest:transformation_button",
+      "twilightforest:transformation_boat",
+      "twilitgourmet:transformation_cabinet"
+    ]
+  ],
+  "result": [
+    {
+      "chance": 0.75,
+      "item": {
+        "id": "twilightforest:transformation_planks"
+      }
+    }
+  ],
+  "tool": {
+    "neoforge:ingredient_type": "neoforge:compound",
+    "children": [
+      {
+        "neoforge:ingredient_type": "farmersdelight:item_ability",
+        "action": "axe_dig"
+      },
+      "#minecraft:axes"
+    ]
+  }
+}

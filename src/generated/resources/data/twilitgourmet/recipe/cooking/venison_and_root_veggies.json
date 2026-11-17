@@ -1,0 +1,14 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    "twilightforest:raw_venison",
+    "twilightforest:fiery_blood",
+    "#c:foods/vegetable",
+    "#c:foods/vegetable"
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "twilitgourmet:venison_and_root_veggies"
+  }
+}

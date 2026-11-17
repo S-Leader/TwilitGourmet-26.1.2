@@ -1,0 +1,9 @@
+{
+  "color": -12736090,
+  "effect": {
+    "duration": 900,
+    "id": "minecraft:night_vision",
+    "show_icon": true
+  },
+  "fill_chance_on_random_tick": 0.125
+}

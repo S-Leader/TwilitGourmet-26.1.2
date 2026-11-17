@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    "twilightforest:cicada"
+  ],
+  "result": [
+    {
+      "item": {
+        "id": "minecraft:gray_dye"
+      }
+    }
+  ],
+  "tool": {
+    "neoforge:ingredient_type": "neoforge:compound",
+    "children": [
+      {
+        "neoforge:ingredient_type": "farmersdelight:item_ability",
+        "action": "knife_dig"
+      },
+      "#c:tools/knife"
+    ]
+  }
+}

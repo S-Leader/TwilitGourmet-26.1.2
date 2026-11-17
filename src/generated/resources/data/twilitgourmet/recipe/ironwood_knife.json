@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": "#c:ingots/ironwood",
+    "S": "#c:rods/wooden"
+  },
+  "pattern": [
+    "I",
+    "S"
+  ],
+  "result": {
+    "components": {
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 1
+      }
+    },
+    "id": "twilitgourmet:ironwood_knife"
+  }
+}

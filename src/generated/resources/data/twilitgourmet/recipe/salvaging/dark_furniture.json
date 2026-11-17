@@ -1,0 +1,35 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    [
+      "twilightforest:dark_door",
+      "twilightforest:dark_trapdoor",
+      "twilightforest:dark_sign",
+      "twilightforest:dark_hanging_sign",
+      "twilightforest:dark_fence",
+      "twilightforest:dark_fence_gate",
+      "twilightforest:dark_pressure_plate",
+      "twilightforest:dark_button",
+      "twilightforest:dark_boat",
+      "twilitgourmet:dark_cabinet"
+    ]
+  ],
+  "result": [
+    {
+      "chance": 0.75,
+      "item": {
+        "id": "twilightforest:dark_planks"
+      }
+    }
+  ],
+  "tool": {
+    "neoforge:ingredient_type": "neoforge:compound",
+    "children": [
+      {
+        "neoforge:ingredient_type": "farmersdelight:item_ability",
+        "action": "axe_dig"
+      },
+      "#minecraft:axes"
+    ]
+  }
+}

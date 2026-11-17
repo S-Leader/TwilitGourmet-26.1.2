@@ -1,0 +1,35 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    [
+      "twilightforest:sorting_door",
+      "twilightforest:sorting_trapdoor",
+      "twilightforest:sorting_sign",
+      "twilightforest:sorting_hanging_sign",
+      "twilightforest:sorting_fence",
+      "twilightforest:sorting_fence_gate",
+      "twilightforest:sorting_pressure_plate",
+      "twilightforest:sorting_button",
+      "twilightforest:sorting_boat",
+      "twilitgourmet:sorting_cabinet"
+    ]
+  ],
+  "result": [
+    {
+      "chance": 0.75,
+      "item": {
+        "id": "twilightforest:sorting_planks"
+      }
+    }
+  ],
+  "tool": {
+    "neoforge:ingredient_type": "neoforge:compound",
+    "children": [
+      {
+        "neoforge:ingredient_type": "farmersdelight:item_ability",
+        "action": "axe_dig"
+      },
+      "#minecraft:axes"
+    ]
+  }
+}

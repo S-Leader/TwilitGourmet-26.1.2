@@ -1,0 +1,16 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    "twilitgourmet:fiddlehead",
+    "twilitgourmet:fiddlehead",
+    "twilitgourmet:fiddlehead",
+    "#c:crops/rice",
+    "#c:crops/rice",
+    "farmersdelight:bone_broth"
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "twilitgourmet:fiddlehead_risotto"
+  }
+}

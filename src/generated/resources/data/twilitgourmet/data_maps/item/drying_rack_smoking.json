@@ -1,0 +1,13 @@
+{
+  "values": {
+    "twilitgourmet:aged_cheese": {
+      "id": "twilitgourmet:aged_smoked_cheese"
+    },
+    "twilitgourmet:mature_cheese": {
+      "id": "twilitgourmet:mature_smoked_cheese"
+    },
+    "twilitgourmet:young_cheese": {
+      "id": "twilitgourmet:young_smoked_cheese"
+    }
+  }
+}

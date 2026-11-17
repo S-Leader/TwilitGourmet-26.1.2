@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "fd_cabinet",
+  "key": {
+    "D": "twilightforest:sorting_trapdoor",
+    "_": "twilightforest:sorting_slab"
+  },
+  "pattern": [
+    "___",
+    "D D",
+    "___"
+  ],
+  "result": {
+    "id": "twilitgourmet:sorting_cabinet"
+  }
+}

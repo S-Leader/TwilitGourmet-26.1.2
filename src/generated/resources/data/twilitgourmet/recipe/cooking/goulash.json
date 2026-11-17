@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 400,
+  "experience": 2.0,
+  "ingredients": [
+    [
+      "twilitgourmet:ground_venison",
+      "twilitgourmet:minced_meef"
+    ],
+    "#c:crops/onion",
+    "farmersdelight:bone_broth",
+    "farmersdelight:tomato_sauce",
+    "#c:foods/pasta"
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "twilitgourmet:goulash"
+  }
+}
